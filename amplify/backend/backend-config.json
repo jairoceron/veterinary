@@ -1,0 +1,76 @@
+{
+  "auth": {
+    "veterinaria00": {
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "managed"
+    }
+  },
+  "function": {
+    "veterinaria00279c16e8": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "veterinaria00b5e0a02b"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "veterinaria00b5e0a02b": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_veterinaria00279c16e8_y": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "veterinaria00279c16e8"
+        }
+      ]
+    },
+    "AMPLIFY_function_veterinaria00b5e0a02b_abcpath": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "veterinaria00b5e0a02b"
+        }
+      ]
+    },
+    "AMPLIFY_function_veterinaria00b5e0a02b_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "veterinaria00b5e0a02b"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+<div class="table-container">
+    <button (click)="listaPropietarios()">Lista de propietarios</button>
+
+
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="idPersonaDueno">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> -- </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100">
+                <button (click)="eliminarDuenoMascota(element.idPersonaDueno)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="identificacion" sticky>
+            <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.identificacion}} </mat-cell>
+        </ng-container>
+
+
+
+        <ng-container matColumnDef="nombres" sticky>
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Nombres </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.nombres}}
+            </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="apellidos">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Apellidos </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.apellidos}}
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="telefono">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Teléfono </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.telefono}}
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="correoelectronico">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Correo Electrónico
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.correoelectronico}}
+            </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="ciudad">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Ciudad </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.ciudad}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="localidad">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Localidad </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.localidad}}
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="direccion">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Dirección </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.direccion}}
+            </mat-cell>
+        </ng-container>
+
+
+
+        <ng-container matColumnDef="idVeterinario">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> Id Veterinario
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.idVeterinario}}
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </table>
+
+    <div>
+        <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+        </mat-paginator>
+    </div>
+
+</div>

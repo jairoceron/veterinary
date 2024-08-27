@@ -1,0 +1,98 @@
+<!-- https://getbootstrap.com/docs/5.1/forms/validation/ -->
+
+<div class="container">
+    <div>
+        Datos del Propietario
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="row g-4" novalidate>
+        <div class="col-2">
+            <label for="validationNombre" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="validationNombre" value="nombreDue" [(ngModel)]="nombreDue"
+                name="nombreDue">
+            <div class="valid-feedback">
+                Nombre Validado!
+            </div>
+
+        </div>
+
+        <div class="col-2">
+            <label for="validationApellido" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="validationApellido" value="Apellidos" [(ngModel)]="apellidoDue"
+                name="apellidoDue">
+            <div class="valid-feedback">
+                Apellido Validado!
+            </div>
+        </div>
+
+        <div class="col-2">
+            <label for="validationIden" class="form-label">Identificación</label>
+            <input type="text" class="form-control" id="validationIden" value="identificacion"
+                [(ngModel)]="identificacionDue" name="identificacionDue">
+            <div class="valid-feedback">
+                Identification Validate!
+            </div>
+        </div>
+
+
+
+        <div class="col-2">
+            <label for="validationTelefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="validationTelefono" [(ngModel)]="telefono" name="telefono">
+            <div class="invalid-feedback">
+                Please choose a phone.
+            </div>
+        </div>
+
+    </div>
+    <div class="row g-4" novalidate>
+        <div class="col-3">
+            <label for="validationCorreo" class="form-label">Correo Electrónico</label>
+
+            <input type="text" class="form-control" id="validationCorreo" [(ngModel)]="correoelectronico"
+                name="correoelectronico">
+            <div class="invalid-feedback">
+                Please choose a email.
+            </div>
+
+        </div>
+
+        <div class="col-2">
+            <label for="validationCiudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="validationCiudad" [(ngModel)]="ciudadDue" name="ciudadDue">
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+
+        <div class="col-2">
+            <label for="validationLocali" class="form-label">Localidad</label>
+            <div class="col-xs-2">
+                <input type="text" class="form-control input-sm " id="validationLocali" [(ngModel)]="localidadDue"
+                    name="localidadDue">
+            </div>
+            <div class="invalid-feedback">
+                Please provide a valid locality.
+            </div>
+        </div>
+
+        <div class="col-3">
+            <label for="validationDirec" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="validationDirec" [(ngModel)]="direccionDue" name="direccionDue"  >
+            <div class="invalid-feedback">
+                Please provide a valid addres.
+            </div>
+        </div>
+
+        <div class="col-3">
+            <button (click)="zzxPaciente()" class="btn btn-primary">Guarda Información del
+                Propietario</button>
+
+        </div>
+    </div>
+
+

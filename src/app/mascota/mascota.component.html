@@ -1,0 +1,153 @@
+<!--
+    -->
+
+<!-- div class="col-12">
+            <button class="btn btn-primary" type="submit">Guarda Información del</button>
+        </div -->
+
+
+
+<div class="col-md-4">
+    <label for="validationCustom05" class="form-label">Nombre del Perro</label>
+    <input type="text" class="form-control" id="validationnPerro" required [(ngModel)]="nombremascota"
+        name="nombremascota">
+    <div class="invalid-feedback">
+        Please provide a valid zip.
+    </div>
+</div>
+
+
+
+
+<div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Raza</label>
+    <select class="form-select" id="validationCustom04" required [(ngModel)]="raza" name="raza">
+        <option selected disabled value="">Choose...</option>
+        <option>Pastor Aleman</option>
+        <option>Dachshund</option>
+        <option>Boxer</option>
+    </select>
+    <div class="invalid-feedback">
+        Please select a valid state.
+    </div>
+</div>
+
+<div class="col-3">
+    <button (click)="guardaInfoMascota()" class="btn btn-primary">Guarda Información de la
+        Mascota</button>
+</div>
+
+<!-- div>
+                Datos del Paciente
+            </div>
+    
+    
+    
+            <div>
+                Sexo <input type="radio"> Macho <input type="radio"> Hembra
+            </div>
+    
+            <div>
+                Especie <select>
+                    <option>Pastor Aleman</option>
+                </select>
+            </div>
+    
+            <div>
+                Color <select>
+                    <option>Blanco</option>
+                    <option>Negro</option>
+                </select>
+            </div>
+    
+            <div>
+                Peso <input type="text">
+            </div-->
+
+
+<!-- /div>
+    </div --->
+
+<div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<div class="input-group input-group-lg">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+
+<mat-toolbar color="primary">
+    Angular Material 2 App
+</mat-toolbar>
+<div class="basic-container">
+
+    <div class="mat-body-1">
+        A simple demo for file uploading with remove button
+    </div>
+
+    <input (change)="onFileSelect($event)" type="file" accept="all/*" #fileSelect>
+
+    <!-- mat-form-field floatPlaceholder="never"  -->
+    <input (change)="onFileSelect($event)" type="file" accept="all/*" #fileSelect>
+    <input readonly matInput [(ngModel)]="filename" placeholder="Select file..." />
+    <button *ngIf="this.base64File" (click)="this.base64File = ''; this.filename = ''" matSuffix
+        matTooltip="Remove selected file" [matTooltipPosition]="'above'" type="button" color="warn" mat-icon-button>
+        <mat-icon>close</mat-icon>33333333333
+    </button>
+    555555555
+    <button matSuffix mat-icon-button (click)="fileSelect.click();" matTooltip="Select a file"
+        [matTooltipPosition]="'above'">
+        <mat-icon>file_upload</mat-icon>wwwwwww
+    </button>
+    rrrr
+    <!-- /mat-form-field  -->
+
+    <span class="version-info">Current build: </span>
+</div>
+
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+
+<div class="text-center">
+    <input class="form-control" type="file" (change)="onChange($event)" />
+    <br />966666666666666666
+    <button (click)="onUpload()" class="btn btn-success">Upload +*+*+*+*+*</button>
+</div>
+
+
+<!-- Shareable short link of uoloaded file -->
+<div class="container text-center jumbotron" *ngIf="shortLink">
+    <h2>Visit Here</h2>
+    <a href="{{ shortLink }}">{{ shortLink }}</a>
+</div>
+
+<!--Flag variable is used here-->
+<div class="container" *ngIf="loading">
+    <h3>Loading ...</h3>
+</div>
+kamala
+<input type="file" (change)="upload(  $event)   ">
+
+
+<div class="progress" *ngIf="progress">
+    <div class="progress-bar" [style.width]="progress + '%'">{{progress}}%</div>
+</div>
+
+<div>---- cuando la vida les cobre todas esas marranadas</div>
+<input type="file" id="fileUpload" #fileUpload multiple  (change)="onFileChange($event)" >

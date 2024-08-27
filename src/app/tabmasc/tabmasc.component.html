@@ -1,0 +1,50 @@
+<div class="table-container">
+    <button (click)="listPet()">Lista de Mascotas</button>
+
+
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="idPersonaDueno">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> -- </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100">
+                <button (click)="eliminarDuenoMascota(element.idPersonaDueno)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="nombreMascota" sticky>
+            <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.nombreMascota}} </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="idVeterinaria" sticky>
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> idVeterinaria </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.idVeterinaria}}
+            </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="raza">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> raza </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.raza}}
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="idVetMascota">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> idVetMascota </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.idVetMascota}}
+            </mat-cell>
+        </ng-container>        
+
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </table>
+
+    <div>
+        <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+        </mat-paginator>
+    </div>
+
+</div>

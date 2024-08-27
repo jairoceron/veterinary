@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-veterinaria00-dev-ff5d7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::907065312277:role/amplify-veterinaria00-dev-ff5d7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::907065312277:role/amplify-veterinaria00-dev-ff5d7-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-veterinaria00-dev-ff5d7-deployment",
+      "UnauthRoleName": "amplify-veterinaria00-dev-ff5d7-unauthRole",
+      "StackName": "amplify-veterinaria00-dev-ff5d7",
+      "StackId": "arn:aws:cloudformation:us-east-2:907065312277:stack/amplify-veterinaria00-dev-ff5d7/6da56af0-6239-11ef-9585-021763b9fa9f",
+      "AmplifyAppId": "d3w4th7s4oin3f"
+    },
+    "categories": {
+      "function": {
+        "veterinaria00b5e0a02b": {
+          "abcpath": "123",
+          "secretsPathAmplifyAppId": "d3w4th7s4oin3f"
+        },
+        "veterinaria00279c16e8": {
+          "y": "y"
+        }
+      },
+      "auth": {
+        "veterinaria00": {}
+      }
+    }
+  }
+}

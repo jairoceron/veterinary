@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "function": {
+      "veterinaria00b5e0a02b": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "y",
+      "environmentVariableName": "y"
+    }
+  ]
+}
