@@ -1,0 +1,40 @@
+<div class="table-container">
+
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="idcontrato">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> -- </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100">
+
+                &nbsp;&nbsp;&nbsp;
+
+                &nbsp;&nbsp;&nbsp;
+
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="modalidad" sticky>
+            <mat-header-cell *matHeaderCellDef> Modalidad </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.modalidad}} </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="regimen" sticky>
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> regimen </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.regimen}}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="numero">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> numero </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.numero}}
+            </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </table>
+
+    <div>
+        <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+        </mat-paginator>
+    </div>
+
+</div>

@@ -1,153 +1,200 @@
-<!--
-    -->
+<div>&nbsp;Datos de la Mascota </div>
+<div class="row g-4">
+    <div class="col-md-2">
 
-<!-- div class="col-12">
-            <button class="btn btn-primary" type="submit">Guarda Información del</button>
-        </div -->
-
-
-
-<div class="col-md-4">
-    <label for="validationCustom05" class="form-label">Nombre del Perro</label>
-    <input type="text" class="form-control" id="validationnPerro" required [(ngModel)]="nombremascota"
-        name="nombremascota">
-    <div class="invalid-feedback">
-        Please provide a valid zip.
+        <label for="validationCustom05" class="mb-0">Nombre</label>
+        <input type="text" class="form-control" id="validationnPerro" required [(ngModel)]="imageGen.nombreMascota"
+            name="nombremascota">
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
     </div>
-</div>
 
+    <div class="col-md-2">
+        <label for="validationCustom04" class="mb-0">Especie</label>
+        <select class="form-select" id="validationCustom04" (change)="seleccionaEspecie()" required
+            [(ngModel)]="imageGen.especie" name="especie">
+            <option selected disabled value="">Seleccione ...</option>
 
+            <option *ngFor="let especieXX of iEspecie;let x = index" [ngValue]="especieXX.name" class="dropdown-item">
+                {{especieXX.name}}</option>
+        </select>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
 
-
-<div class="col-md-3">
-    <label for="validationCustom04" class="form-label">Raza</label>
-    <select class="form-select" id="validationCustom04" required [(ngModel)]="raza" name="raza">
-        <option selected disabled value="">Choose...</option>
-        <option>Pastor Aleman</option>
-        <option>Dachshund</option>
-        <option>Boxer</option>
-    </select>
-    <div class="invalid-feedback">
-        Please select a valid state.
     </div>
-</div>
 
-<div class="col-3">
-    <button (click)="guardaInfoMascota()" class="btn btn-primary">Guarda Información de la
-        Mascota</button>
-</div>
 
-<!-- div>
-                Datos del Paciente
+    <div class="col-md-2">
+        <label for="validationCustom04" class="mb-0">Sexo</label>
+        <select class="form-select" id="validationCustom04" required [(ngModel)]="imageGen.sexo" name="sexo">
+            <option selected disabled value="">Seleccione ...</option>
+            <option>Macho</option>
+            <option>Hembra</option>
+
+        </select>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+
+    </div>
+
+    <div class="col-md-2">
+        <label for="validationCustom04" class="mb-0">Raza</label>
+        <select class="form-select" id="validationCustom04" required [(ngModel)]="imageGen.raza" name="raza">
+            <option selected disabled value="">Seleccione ...</option>
+            <option>Pastor Aleman</option>
+            <option>Dachshund</option>
+            <option>Boxer</option>
+            <option *ngFor="let razaXX of iRaza;let x = index" [ngValue]="razaXX" class="dropdown-item">
+                {{razaXX.nombre}}</option>
+        </select>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <label for="validationCustom04" class="mb-0">Color</label>
+        <select class="form-select" id="validationCustom04" required [(ngModel)]="imageGen.color" name="color">
+            <option selected disabled value="">Seleccione ...</option>
+            <option>Blanco</option>
+            <option>Negro</option>
+            <option>Café</option>
+            <option>Marron</option>
+            <option>Amarillo</option>
+        </select>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+
+
+    <div class="col-md-2">
+        <label for="validationCustom04" class="mb-0">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" id="validationnPeso" required [(ngModel)]="imageGen.fechaNacimiento"
+            name="fechaNacimiento">
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+
+    <!-- pre>{{fechaNacimiento|json}}</pre -->
+
+    <div class="col-md-1">
+        <label for="validationCustom05" class="mb-0">Peso</label>
+        <input type="text" class="form-control" id="validationnPeso" required [(ngModel)]="imageGen.peso" name="peso">
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <label for="validationCustom05" class="mb-0">Nombre Dueño</label>
+        <input type="text" class="form-control" id="validationnPerro" required [(ngModel)]="imageGen.nombreDueno"
+            name="nombreDueno">
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
+    </div>
+
+
+    <div class="col-md-2">
+        <label for="validationCustom05" class="mb-0">Cédula Dueño</label>
+        <input type="text" class="form-control" id="validationnPerro" required [(ngModel)]="imageGen.cedulaDueno"
+            name="nombreDueno">
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
+    </div>
+
+
+    <div *ngIf="imageGen.image  === image_jpeg"  >
+        <div class="col-md-4">
+            <label for="validationCustom05" class="mb-0">Imagen Jpeg</label>
+            <input class="form-control" type="file" (change)="onChange100($event)">
+
+
+            <div class="invalid-feedback">
+                Please provide a valid zip.
             </div>
-    
-    
-    
-            <div>
-                Sexo <input type="radio"> Macho <input type="radio"> Hembra
+        </div>
+
+        <div class="col-md-2">
+            <label for="validationCustom05" class="mb-0">&nbsp;-</label>
+            <button (click)="onUpload100()" class="form-control btn btn-success">
+                Cargar Imagen
+            </button>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
             </div>
-    
-            <div>
-                Especie <select>
-                    <option>Pastor Aleman</option>
-                </select>
-            </div>
-    
-            <div>
-                Color <select>
-                    <option>Blanco</option>
-                    <option>Negro</option>
-                </select>
-            </div>
-    
-            <div>
-                Peso <input type="text">
-            </div-->
 
-
-<!-- /div>
-    </div --->
-
-<div class="input-group input-group-sm mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+        </div>
     </div>
-    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-</div>
+    <div class="col-md-3">
+        <label for="validationCustom05" class="mb-0">&nbsp;-</label>
+        <button (click)="guardaInfoMascota()" class="form-control btn btn-primary">Guarda Información de la
+            Mascota</button>
 
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
     </div>
-    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-</div>
 
-<div class="input-group input-group-lg">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+
 </div>
 
 
-<mat-toolbar color="primary">
-    Angular Material 2 App
-</mat-toolbar>
-<div class="basic-container">
+<!-- div class="text-center">
+        <input class="form-control" type="file" (change)="onChange99($event)">
 
-    <div class="mat-body-1">
-        A simple demo for file uploading with remove button
-    </div>
-
-    <input (change)="onFileSelect($event)" type="file" accept="all/*" #fileSelect>
-
-    <!-- mat-form-field floatPlaceholder="never"  -->
-    <input (change)="onFileSelect($event)" type="file" accept="all/*" #fileSelect>
-    <input readonly matInput [(ngModel)]="filename" placeholder="Select file..." />
-    <button *ngIf="this.base64File" (click)="this.base64File = ''; this.filename = ''" matSuffix
-        matTooltip="Remove selected file" [matTooltipPosition]="'above'" type="button" color="warn" mat-icon-button>
-        <mat-icon>close</mat-icon>33333333333
-    </button>
-    555555555
-    <button matSuffix mat-icon-button (click)="fileSelect.click();" matTooltip="Select a file"
-        [matTooltipPosition]="'above'">
-        <mat-icon>file_upload</mat-icon>wwwwwww
-    </button>
-    rrrr
-    <!-- /mat-form-field  -->
-
-    <span class="version-info">Current build: </span>
-</div>
+        <button (click)="onUpload99()" class="btn btn-success">
+            Upload
+        </button>
+    </div   -->
 
 <div>&nbsp;</div>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-
 <div class="text-center">
-    <input class="form-control" type="file" (change)="onChange($event)" />
-    <br />966666666666666666
-    <button (click)="onUpload()" class="btn btn-success">Upload +*+*+*+*+*</button>
+
 </div>
 
-
-<!-- Shareable short link of uoloaded file -->
-<div class="container text-center jumbotron" *ngIf="shortLink">
-    <h2>Visit Here</h2>
-    <a href="{{ shortLink }}">{{ shortLink }}</a>
-</div>
+<!-- Shareable short link of uploaded file -->
+<!-- div class="container text-center jumbotron" *ngIf="shortLink">
+        <h2> Visit Here</h2>
+        <a href="{{shortLink}}">{{shortLink}}</a>
+    </div -->
 
 <!--Flag variable is used here-->
-<div class="container" *ngIf="loading">
-    <h3>Loading ...</h3>
+<!-- div class="container" *ngIf="loading">
+        <h3>Loading ...</h3>
+    </div  -->
+
+
+
+
+
+<!-- img src="https://mnpb2lomnh.execute-api.us-east-2.amazonaws.com/v1/bucketsagevinok?file=pastor_01.jpeg" / -->
+
+<div class="container-lg">
+    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+            <img [src]="imageUrl" class="img-fluid" />
+
+
+        </div>
+    </div>
 </div>
-kamala
-<input type="file" (change)="upload(  $event)   ">
 
 
-<div class="progress" *ngIf="progress">
-    <div class="progress-bar" [style.width]="progress + '%'">{{progress}}%</div>
-</div>
+<div>&nbsp;</div>
+<!-- https://mnpb2lomnh.execute-api.us-east-2.amazonaws.com/v1/bucketsagevinok?file={{nameJpeg}}.jpeg -->
 
-<div>---- cuando la vida les cobre todas esas marranadas</div>
-<input type="file" id="fileUpload" #fileUpload multiple  (change)="onFileChange($event)" >
+<!-- div class="container-lg">
+    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+            <img src="https://mnpb2lomnh.execute-api.us-east-2.amazonaws.com/v1/bucketsagevinok?file=9983779.jpeg"
+                class="img-fluid" />
+        </div>
+    </div>
+</div  -->

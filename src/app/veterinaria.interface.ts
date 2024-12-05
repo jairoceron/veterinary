@@ -1,3 +1,10 @@
+import { IMAGE_JPEG } from "./service/constants";
+
+export interface IEspecie {
+  idEspecie: string,
+  name: string
+}
+
 export interface Pqrs {
   objectid: number;
   radicado: string;
@@ -13,6 +20,94 @@ export interface Pqrs {
 
 }
 
+export interface IImagen {
+  'idVetMascota': {
+    'S': string
+  }, 'image': {
+    'S': string
+  }, 'order': {
+    'S': string
+  }
+}
+
+export interface IRazasGen {
+  'idRaza': string,
+  'especie': string,
+  'nombre': string
+}
+
+export interface IEnfermedad {
+  'idVetEnfermedad': string,
+  'especie': string,
+  'nombre': string,
+}
+
+export interface IMascotaGen {
+
+  'idVetMascota': string,
+  'image': string,
+  'nombreMascota': string,
+  'especie': string,
+  'sexo': string,
+  'raza': string,
+  'color': string,
+  'fechaNacimiento': string,
+  'peso': string,
+  'idVeterinaria': string,
+  'idPersonaDueno': string,
+  'nombreTabla'?: string,
+  'nombreDueno': string,
+  'cedulaDueno': string,
+
+}
+
+export interface IAnamnesicoGen {
+  'idVetAnamnesico': string,
+  'idVetMascota': string,
+  'idVeterinaria': string,
+  'alimentacion': string,
+  'enfermedAnterior': string,
+  'evaluacion': string,
+  'fechaDesparacitacion': string,
+  'fechaUltParto': string,
+  'fechaVacuna': string,
+  'historiaReproductiva': string,
+  'vacuna': string,
+  'tratamiento': string
+}
+
+// idVetMascota,"alimentacion","enfermedAnterior","evaluacion","fechaDesparacitacion","fechaUltParto","fechaVacuna","historiaReproductiva","tratamiento","vacuna"
+
+export interface IAnamnesico {
+
+  'idVetAnamnesico': {
+    'S': string
+  },
+  'idVetMascota': {
+    'S': string
+  }, 'alimentacion': {
+    'S': string
+  }, 'enfermedAnterior': {
+    'S': string
+  }, 'idVeterinaria': {
+    'S': string
+  }, 'evaluacion': {
+    'S': string
+  }, 'fechaDesparacitacion': {
+    'S': string
+  }, 'fechaUltParto': {
+    'S': string
+  }, 'fechaVacuna': {
+    'S': string
+  }, 'historiaReproductiva': {
+    'S': string
+  }, 'vacuna': {
+    'S': string
+  }, 'tratamiento': {
+    'S': string
+  }
+}
+
 export interface IMascota {
   'idPersonaDueno': {
     'S': string
@@ -23,6 +118,20 @@ export interface IMascota {
   }, 'raza': {
     'S': string
   }, 'idVeterinaria': {
+    'S': string
+  }, 'sexo': {
+    'S': string
+  }, 'especie': {
+    'S': string
+  }, 'color': {
+    'S': string
+  }, 'peso': {
+    'S': string
+  }, 'fechaNacimiento': {
+    'S': string
+  }, 'nombreDueno': {
+    'S': string
+  }, 'cedulaDueno': {
     'S': string
   }
 }
@@ -94,19 +203,16 @@ export interface IDynamoPersonaDueno {
 }
 */
 
+
+
 export interface PersonaDueno {
   idPersonaDueno: number;
   identificacion: string;
-
   nombres: string;
   apellidos: string;
   ciudad: string;
   localidad: string;
   direccion: string;
-
-
-  // shape?: string; 
-
 }
 
 export interface Pais {
@@ -115,7 +221,16 @@ export interface Pais {
 
 export interface IVeterinaria {
   idVeterinaria: string,
-  nombreTabla: string
+  nombreTabla: string,
+  idPersonaDueno?: string,
+  idMascota?: string,
+  idVetMascota?: string,
+}
+
+export interface IDuenoMascota {
+  idVeterinario: string,
+  nombreTabla: string,
+  apellidos: string
 }
 
 
@@ -156,13 +271,14 @@ export interface Element {
 }
 
 export interface proMascota {
-  Items: ItemsX[]
+  Items: ItemsPersonaDueno[]
 }
 
 export interface listMascota {
-  Items: ItemsMascotaX[]
+  Items: IMascotaGen[]
 }
 
+/*
 export interface ItemsMascotaX {
   idPersonaDueno: string,
   nombreMascota: string,
@@ -171,10 +287,28 @@ export interface ItemsMascotaX {
   idVetMascota: string
 
 }
+  */
+
+export const MASCOTACONST: IMascotaGen = {
+
+  'idVetMascota': '',
+  'image': IMAGE_JPEG,
+  'nombreMascota': '',
+  'especie': '',
+  'sexo': '',
+  'raza': '',
+  'color': '',
+  'fechaNacimiento': '',
+  'peso': '',
+  'idVeterinaria': '',
+  'idPersonaDueno': '',
+  'nombreDueno': '',
+'cedulaDueno': ''
+}
 
 
 
-export interface ItemsX {
+export interface ItemsPersonaDueno {
 
   identificacion: string,
   nombres: string,
@@ -185,5 +319,16 @@ export interface ItemsX {
   idPersonaDueno: string,
   idVeterinario: string,
   telefono: string,
+  correoelectronico: string,
+  image: string
 
 }
+
+export interface VetImages {
+  // tabla vet_images
+  idVetMascota: string,
+  image: string,
+  order: string
+}
+
+

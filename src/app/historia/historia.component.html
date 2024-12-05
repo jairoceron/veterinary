@@ -1,98 +1,122 @@
 <!-- https://getbootstrap.com/docs/5.1/forms/validation/ -->
 
-<div class="container">
-    <div>
-        Datos del Propietario
-    </div>
 
+<div>&nbsp;</div>
+
+<div class="card shadow-0 border">
+
+    <div class="p-4">
+        <div>&nbsp;</div>
+
+
+        <div class="container">
+            Datos del Propietario de la Mascota
+        </div>
+        <div>&nbsp;</div>
+
+        <div class="row g-4" novalidate>
+            <div class="col-2 mb-2">
+                <!-- div class="col-2" -->
+
+                <p class="mb-0">Nombres</p>
+                <!--label for="validationNombre" class="form-label">Nombres</label-->
+                <input type="text" class="form-control" id="validationNombre" value="nombreDue"
+                    [(ngModel)]="itemsPersonaDueno.nombres" name="nombreDue">
+                <div class="valid-feedback">
+                    Nombre Validado!
+                </div>
+
+            </div>
+
+            <div class="col-2">
+                <!-- label for="validationApellido" class="form-label">Apellidos</label -->
+
+                <p class="mb-0">Apellidos</p>
+                <input type="text" class="form-control" id="validationApellido" value="Apellidos"
+                    [(ngModel)]="itemsPersonaDueno.apellidos" name="apellidoDue">
+                <div class="valid-feedback">
+                    Apellido Validado!
+                </div>
+            </div>
+
+            <div class="col-2">
+                <!-- label for="validationIden" class="form-label">Identificación</label-->
+
+                <p class="mb-0">Identificación</p>
+                <input type="text" class="form-control" id="validationIden" value="identificacion"
+                    [(ngModel)]="itemsPersonaDueno.identificacion" name="identificacionDue">
+                <div class="valid-feedback">
+                    Identification Validate!
+                </div>
+            </div>
+
+
+
+            <div class="col-2">
+                <!-- label for="validationTelefono" class="form-label">Telefono</label -->
+
+                <p class="mb-0">Teléfono</p>
+                <input type="text" class="form-control" id="validationTelefono" [(ngModel)]="itemsPersonaDueno.telefono"
+                    name="telefono">
+                <div class="invalid-feedback">
+                    Please choose a phone.
+                </div>
+            </div>
+
+            <div class="col-4">
+                <!-- label for="validationCorreo" class="form-label">Correo Electrónico</label -->
+
+                <p class="mb-0">Correo Electrónico</p>
+                <input type="text" class="form-control" id="validationCorreo"
+                    [(ngModel)]="itemsPersonaDueno.correoelectronico" name="correoelectronico">
+                <div class="invalid-feedback">
+                    Please choose a email.
+                </div>
+
+            </div>
+
+            <div class="col-2">
+                <!-- label for="validationCiudad" class="form-label">Ciudad</label -->
+
+                <p class="mb-0">Ciudad</p>
+                <input type="text" class="form-control" id="validationCiudad" [(ngModel)]="itemsPersonaDueno.ciudad"
+                    name="ciudadDue">
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+
+            <div class="col-2">
+                <!-- label for="validationLocali" class="form-label">Localidad</label -->
+
+                <p class="mb-0">Localidad</p>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control input-sm " id="validationLocali"
+                        [(ngModel)]="itemsPersonaDueno.localidad" name="localidadDue">
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a valid locality.
+                </div>
+            </div>
+
+            <div class="col-4">
+                <!-- label for="validationDirec" class="form-label">Dirección</label -->
+
+                <p class="mb-0">Dirección</p>
+                <input type="text" class="form-control" id="validationDirec" [(ngModel)]="itemsPersonaDueno.direccion"
+                    name="direccionDue">
+                <div class="invalid-feedback">
+                    Please provide a valid addres.
+                </div>
+            </div>
+
+            <div class="col-3">
+                <button (click)="zzxPaciente()" class="btn btn-primary">Guardar</button>
+
+            </div>
+        </div>
+    </div>
 </div>
-
-
-<div class="container">
-    <div class="row g-4" novalidate>
-        <div class="col-2">
-            <label for="validationNombre" class="form-label">Nombres</label>
-            <input type="text" class="form-control" id="validationNombre" value="nombreDue" [(ngModel)]="nombreDue"
-                name="nombreDue">
-            <div class="valid-feedback">
-                Nombre Validado!
-            </div>
-
-        </div>
-
-        <div class="col-2">
-            <label for="validationApellido" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="validationApellido" value="Apellidos" [(ngModel)]="apellidoDue"
-                name="apellidoDue">
-            <div class="valid-feedback">
-                Apellido Validado!
-            </div>
-        </div>
-
-        <div class="col-2">
-            <label for="validationIden" class="form-label">Identificación</label>
-            <input type="text" class="form-control" id="validationIden" value="identificacion"
-                [(ngModel)]="identificacionDue" name="identificacionDue">
-            <div class="valid-feedback">
-                Identification Validate!
-            </div>
-        </div>
-
-
-
-        <div class="col-2">
-            <label for="validationTelefono" class="form-label">Telefono</label>
-            <input type="text" class="form-control" id="validationTelefono" [(ngModel)]="telefono" name="telefono">
-            <div class="invalid-feedback">
-                Please choose a phone.
-            </div>
-        </div>
-
-    </div>
-    <div class="row g-4" novalidate>
-        <div class="col-3">
-            <label for="validationCorreo" class="form-label">Correo Electrónico</label>
-
-            <input type="text" class="form-control" id="validationCorreo" [(ngModel)]="correoelectronico"
-                name="correoelectronico">
-            <div class="invalid-feedback">
-                Please choose a email.
-            </div>
-
-        </div>
-
-        <div class="col-2">
-            <label for="validationCiudad" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" id="validationCiudad" [(ngModel)]="ciudadDue" name="ciudadDue">
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
-        </div>
-
-        <div class="col-2">
-            <label for="validationLocali" class="form-label">Localidad</label>
-            <div class="col-xs-2">
-                <input type="text" class="form-control input-sm " id="validationLocali" [(ngModel)]="localidadDue"
-                    name="localidadDue">
-            </div>
-            <div class="invalid-feedback">
-                Please provide a valid locality.
-            </div>
-        </div>
-
-        <div class="col-3">
-            <label for="validationDirec" class="form-label">Dirección</label>
-            <input type="text" class="form-control" id="validationDirec" [(ngModel)]="direccionDue" name="direccionDue"  >
-            <div class="invalid-feedback">
-                Please provide a valid addres.
-            </div>
-        </div>
-
-        <div class="col-3">
-            <button (click)="zzxPaciente()" class="btn btn-primary">Guarda Información del
-                Propietario</button>
-
-        </div>
-    </div>
-
-
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>

@@ -1,0 +1,183 @@
+<h2>Anamnesico</h2>
+
+{{nombreMascota}}--
+
+<!-- img src="{{imageUrl}}"  -->
+
+<div class="container-lg">
+    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+            <img [src]="imageUrl" class="img-fluid" />
+
+
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Fecha de última desparacitación<nav>
+
+            </nav></label>
+        <input type="date" class="form-control" id="validationnPeso" required [(ngModel)]="fechaUltDesparacita"
+            name="fechaNacimiento">
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Producto<nav>
+
+            </nav></label>
+        <input type="text" class="form-control" id="validationnPeso" required [(ngModel)]="producto" name="producto">
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Vacuna<nav>
+
+            </nav></label>
+        <!-- input type="text" class="form-control" id="validationnPeso" required [(ngModel)]="vacuna" name="vacuna" -->
+        <mat-form-field>
+            <mat-label>Vacuna</mat-label>
+            <mat-select [formControl]="toppings" multiple>
+                @for (topping of toppingList; track topping) {
+                <mat-option [value]="topping">{{topping}}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Fecha vacuna<nav>
+
+            </nav></label>
+        <input type="date" class="form-control" id="validationnPeso" required [(ngModel)]="fechaVacuna"
+            name="fechaNacimiento">
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+
+    <div class="col-md-3"></div>
+    <label for="validationCustom04" class="mb-0">Marca vacuna<nav>
+
+        </nav></label>
+    <input type="date" class="form-control" id="validationnPeso" required [(ngModel)]="marcaVacuna" name="marcaVacuna">
+    <div class="invalid-feedback">
+        Please select a valid state.
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Lote<nav>
+            </nav></label>
+        <input type="date" class="form-control" id="validationnPeso" required [(ngModel)]="lote" name="lote">
+        <div class="invalid-feedback">
+            lote.
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Enfermedades Anteriores<nav>
+            </nav></label>
+        
+
+            <mat-form-field>
+                <mat-label>Enfermedades Anteriores</mat-label>
+                <mat-select [formControl]="enfermedad" multiple>
+                    @for (topping of enfermedadesList; track topping) {
+                    <mat-option [value]="topping">{{topping.nombre}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+
+        <div class="invalid-feedback">
+            Enfermedad anterior
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Tratamiento<nav>
+            </nav></label>
+        <input type="text" class="form-control" id="tratamiento" required [(ngModel)]="tratamiento" name="tratamiento">
+        <div class="invalid-feedback">
+            Tratamiento
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Evaluación<nav>
+            </nav></label>
+        <input type="text" class="form-control" id="evolucion" required [(ngModel)]="evaluacion" name="evolucion">
+        <div class="invalid-feedback">
+            Evolución
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Alimentación<nav>
+            </nav></label>
+        <input type="text" class="form-control" id="alimentacion" required [(ngModel)]="alimentacion"
+            name="alimentacion">
+        <div class="invalid-feedback">
+            Alimentacion
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Historia reproductiva<nav>
+            </nav></label>
+        <input type="text" class="form-control" id="historiaReproductiva" required [(ngModel)]="historiaReproductiva"
+            name="historiaReproductiva">
+        <div class="invalid-feedback">
+            Historia Reproductiva
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Historia reproductiva<nav>
+            </nav></label>
+        <div>
+            <input type="radio" id="entero" required [(ngModel)]="entero" name="entero"> Entero
+            <input type="radio" id="esteririzado" required [(ngModel)]="esterilizado" name="entero">
+            Esterilizado
+        </div>
+        <div class="invalid-feedback">
+            Historia Reproductiva
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <label for="validationCustom04" class="mb-0">Fecha ultimo parto<nav>
+            </nav></label>
+        <input type="date" class="form-control" id="fechaUltimoParto" required [(ngModel)]="fechaUltimoParto"
+            name="fechaUltimoParto">
+        <div class="invalid-feedback">
+            lote.
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <label for="validationCustom05" class="mb-0">&nbsp;-</label>
+        <button (click)="guardaInfoAnamnesico()" class="form-control btn btn-primary">Guarda Información de la
+            Consulta</button>
+
+        <div class="invalid-feedback">
+            Please provide a valid zip.
+        </div>
+    </div>
+
+
+</div>

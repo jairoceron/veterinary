@@ -1,0 +1,76 @@
+<div class="card shadow-0 border">
+
+    <div class="p-4">
+
+
+        <div class="row g-6" novalidate>
+
+            <div class="col-2">
+                <p class="mb-0">&nbsp; </p>
+                <button (click)="ingresarMascota()" class="btn btn-primary">Ingresar Mascota</button>
+            </div>
+
+
+            <div class="col-3 mb-4">
+                <!-- div class="col-2" -->
+
+                <p class="mb-0">Apellido Propietario </p>
+                <!--label for="validationNombre" class="form-label">Nombres</label-->
+                <input type="text" class="form-control" id="validationNombre" value="nombreDue"
+                    [(ngModel)]="buscarPropMascT" name="nombreDue">
+                <div class="valid-feedback">
+                    Nombre Validado!
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="col-2">
+                <p class="mb-0">&nbsp; </p>
+                <button (click)="buscarPropMasc()" class="btn btn-primary">Buscar</button>
+            </div>
+
+            <div class="col-2">
+                <p class="mb-0">Nombre Mascota </p>
+                <form class="form">
+                    <mat-form-field class="width">
+                        <input matInput placeholder="Nombre Mascota" aria-label="Nombre Mascota"
+                            [matAutocomplete]="auto" [formControl]="countryCtrl" required />
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <div #myDiv (click)="optionClicked()" >
+                                <mat-option *ngFor="let country of filteredCountry | async" [value]="country"
+                                    (optionSelected)="mostrarMascota()">
+                                    <!-- .nombreMascota -->
+                                    <span>{{ country.nombreMascota }} | {{ country.raza }}</span>
+                                </mat-option>
+                            </div >
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <form [formGroup]="companyForm">
+        <mat-form-field>
+            <input type="text" matInput placeholder="Company" formControlName="company" [formControl]="companyCtrl" [matAutocomplete]="autoCo"
+                (ngModelChange)=onSelectionChanged($event) />
+            <mat-autocomplete #autoCo="matAutocomplete" [displayWith]="displayCo">
+                <mat-option *ngFor="let company of filteredCompanies | async" [value]="company.companyName">
+                    {{ company.companyName }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+
+</div>
+
+
+<!-- div *ngIf="formPropietaMascota === 'visualizar'  ">
+    <app-tabdue></app-tabdue>
+</div -->

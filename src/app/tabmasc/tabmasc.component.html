@@ -1,5 +1,5 @@
 <div class="table-container">
-    <button (click)="listPet()">Lista de Mascotas</button>
+    <button (click)="listPet()">Lista de Mascotas !!!!</button>
 
 
     <table mat-table [dataSource]="dataSource">
@@ -8,6 +8,15 @@
             <mat-cell *matCellDef="let element" class="table-column-100">
                 <button (click)="eliminarDuenoMascota(element.idPersonaDueno)">
                     <mat-icon>delete</mat-icon>
+                </button>
+                &nbsp;&nbsp;&nbsp;
+                <button (click)="visualizarImagenMascota(element.idVetMascota)" mat-raised-button>
+                    <mat-icon>add_a_photo</mat-icon>
+                </button>
+                &nbsp;&nbsp;&nbsp;
+                <button (click)="historiaMascota(element.idVetMascota)" mat-raised-button>
+                    <mat-icon>history</mat-icon>
+                    que es?
                 </button>
             </mat-cell>
         </ng-container>
@@ -35,7 +44,7 @@
             <mat-header-cell *matHeaderCellDef class="table-column-100"> idVetMascota </mat-header-cell>
             <mat-cell *matCellDef="let element" class="table-column-100"> {{element.idVetMascota}}
             </mat-cell>
-        </ng-container>        
+        </ng-container>
 
 
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
@@ -43,7 +52,7 @@
     </table>
 
     <div>
-        <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+        <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
         </mat-paginator>
     </div>
 

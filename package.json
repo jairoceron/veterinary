@@ -28,6 +28,7 @@
     "@ng-bootstrap/ng-bootstrap": "^17.0.0",
     "@popperjs/core": "^2.11.8",
     "aws-amplify": "^6.5.2",
+    "base64-arraybuffer": "^1.0.2",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.18.2",

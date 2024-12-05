@@ -1,0 +1,77 @@
+<div class="table-container">
+
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="idPersonaDueno">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> -- </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100">
+                <button (click)="eliminarDuenoMascota(element.idPersonaDueno)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                &nbsp;&nbsp;
+                <button (click)="editDataFormPropMascota(element.idPersonaDueno)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                &nbsp;&nbsp;
+                <button (click)="listMascotaPorPropietar(element.idPersonaDueno)">
+                    <mat-icon>pets</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="alimentacion" sticky>
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> alimentacion </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.alimentacion}}
+            </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="enfermedAnterior">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> !!enfermedAnterior </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.enfermedAnterior}}
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="evaluacion">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> evaluacion </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.evaluacion}}
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="fechaDesparacitacion">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> fechaDesparacitacion
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.fechaDesparacitacion}}
+            </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="fechaUltParto">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> fechaUltParto </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.fechaUltParto}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="fechaVacuna">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> fechaVacuna</mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.fechaVacuna}}
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="historiaReproductiva">
+            <mat-header-cell *matHeaderCellDef class="table-column-100"> historiaReproductiva</mat-header-cell>
+            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.historiaReproductiva}}
+            </mat-cell>
+        </ng-container>
+
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </table>
+
+    <div>
+        <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+        </mat-paginator>
+    </div>
+
+</div>
+

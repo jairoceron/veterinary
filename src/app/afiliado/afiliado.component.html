@@ -1,0 +1,54 @@
+<div class="register-form">
+    <mat-form-field>
+        <mat-label>Regimen</mat-label>
+        <select matNativeControl required [(ngModel)]="regimenN">
+            <option value="Contributivo">Contributivo</option>
+            <option value="Subsidiado">Subsidiado</option>
+        </select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Modalidad</mat-label>
+        <select matNativeControl required [(ngModel)]="modalidadN">
+            <option value="Evento">Evento</option>
+            <option value="Cápita">Cápita</option>
+        </select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Contrato</mat-label>
+        <input matInput [(ngModel)]="numeroN">
+    </mat-form-field>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" (click)="guardar()">Registrar</button>
+        &nbsp;&nbsp;
+        <button type="button" (click)="onReset()" class="btn btn-warning float-right">
+            Reset
+        </button>
+    </div>
+
+    <div   >
+        <div class="col-md-4">
+            <label for="validationCustom05" class="mb-0">Imagen Jpeg</label>
+            <input  type="file" (change)="onChange100($event)">
+
+
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <label for="validationCustom05" class="mb-0">&nbsp;-</label>
+            <button (click)="onUpload100()" class="btn btn-primary">
+                Cargar Imagen
+            </button>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+
+        </div>
+    </div>
+
+</div>

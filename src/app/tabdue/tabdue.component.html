@@ -9,12 +9,17 @@
                 <button (click)="eliminarDuenoMascota(element.idPersonaDueno)">
                     <mat-icon>delete</mat-icon>
                 </button>
-            </mat-cell>
-        </ng-container>
+                &nbsp;&nbsp;
+                <button (click)="editDataFormPropMascota(element.idPersonaDueno)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                &nbsp;&nbsp;
+                <button (click)="listMascotaPorPropietar(element.idPersonaDueno)">
+                    <mat-icon>pets</mat-icon>
+                </button>
 
-        <ng-container matColumnDef="identificacion" sticky>
-            <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
-            <mat-cell *matCellDef="let element"> {{element.identificacion}} </mat-cell>
+
+            </mat-cell>
         </ng-container>
 
 
@@ -57,27 +62,13 @@
             </mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="direccion">
-            <mat-header-cell *matHeaderCellDef class="table-column-100"> Dirección </mat-header-cell>
-            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.direccion}}
-            </mat-cell>
-        </ng-container>
-
-
-
-        <ng-container matColumnDef="idVeterinario">
-            <mat-header-cell *matHeaderCellDef class="table-column-100"> Id Veterinario
-            </mat-header-cell>
-            <mat-cell *matCellDef="let element" class="table-column-100"> {{element.idVeterinario}}
-            </mat-cell>
-        </ng-container>
 
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </table>
 
     <div>
-        <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+        <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
         </mat-paginator>
     </div>
 

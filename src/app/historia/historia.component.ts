@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { PacienteService } from '../service/paciente.service';
-import { IDynamoPersonaDueno00, IItemDynamo, IMascota, Pqrs } from '../veterinaria.interface';
+import { IDuenoMascota, IDynamoPersonaDueno00, IItemDynamo, IMascota, ItemsPersonaDueno, Pqrs } from '../veterinaria.interface';
+import { DialogconfComponent } from '../dialogconf/dialogconf.component';
+import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { VISUALIZAR } from '../service/constants';
 
 @Component({
   selector: 'app-historia',
@@ -10,37 +14,69 @@ import { IDynamoPersonaDueno00, IItemDynamo, IMascota, Pqrs } from '../veterinar
 export class HistoriaComponent implements OnInit {
 
 
+  itemsPersonaDueno: ItemsPersonaDueno = {
 
+    identificacion: '',
+    nombres: '',
+    apellidos: '',
+    ciudad: '',
+    localidad: '',
+    direccion: '',
+    idPersonaDueno: '',
+    idVeterinario: '',
+    telefono: '',
+    correoelectronico: '',
+    image: ''
+  }
 
   // hagamos el primer post ::::
-  nombreDueX: string = ''
-  nombreDue: string = ''
-  apellidoDue: string = ''
-  identificacionDue: string = ''
-  ciudadDue: string = ''
-  localidadDue: string = ''
-  direccionDue: string = ''
-  telefono: string = ''
-  correoelectronico: string = ''
-  nombremascota : string = ''
+  // nombreDueX: string = ''
+  // nombreDue: string = ''
+  // apellidoDue: string = ''
+  // identificacionDue: string = ''
+  // ciudadDue: string = ''
+  // localidadDue: string = ''
+  // direccionDue: string = ''
+  // telefono: string = ''
+  // correoelectronico: string = ''
+  // nombremascota: string = ''
+  buscarPropMascT: string = ''
 
   raza: string = ''
-
+  formPropietaMascota: string = ''
 
 
   constructor(
     private pacienteservice: PacienteService,
+    private dialog: MatDialog,
+    private snackBar: MatSnackBar
 
   ) {
+    this.pacienteservice.itemPersoDuenoObservable.subscribe(x => {
+      console.log('llllllllllllllllll .... ', x);
+      x;
+      this.itemsPersonaDueno = {
 
+        identificacion: x.identificacion,
+        nombres: x.nombres,
+        apellidos: x.apellidos,
+        ciudad: x.ciudad,
+        localidad: x.localidad,
+        direccion: x.direccion,
+        idPersonaDueno: x.idPersonaDueno,
+        idVeterinario: x.idVeterinario,
+        telefono: x.telefono,
+        correoelectronico: x.correoelectronico,
+        image: ''
+
+      }
+
+    })
 
   }
 
   ngOnInit() {
     // ...
-
-
-
   }
 
   guardaPaciente() {
@@ -77,30 +113,44 @@ export class HistoriaComponent implements OnInit {
 
 
 
-  zzxPaciente() {
 
-    /*
-    let pqrs: Pqrs = {
-      objectid: 5,
-      radicado: 'xxx01',
-      asunto_radicacion: 'xxx02',
-      razon_social_establecimiento: 'xxx03',
-      sector_reportado: 'xxx04',
-      localidad: 'xxx05',
-      entidad_de_control: 'xxx05'
-    };
-*/
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogconfComponent, {
+      data: {
+        message: 'Are you sure want to delete?',
+        buttonText: {
+          ok: 'Save',
+          cancel: 'No'
+        }
+      }
+    });
+    const snack = this.snackBar.open('Datos del propietario de la mascota ... dialog');
 
-
-
-    /*
-    this.pacienteservice.updateRadicado(pqrs).subscribe(x => {
-      x;
-      console.log('xxxxxxxx ', x);
-    })
-    */
+    dialogRef.afterClosed().subscribe((confirmed: boolean) => {
+      console.log("este es el original ..... Confirmed ---- ", confirmed);
+      if (confirmed) {
 
 
+        this.guardadoX();  // el guardado se hace en la confirmación
+        this.pacienteservice.editformPropMascota('ocultar');
+
+
+
+
+        snack.dismiss();
+        const a = document.createElement('a');
+        a.click();
+        a.remove();
+        snack.dismiss();
+        this.snackBar.open('Closing snack bar in a few seconds', 'Fechar', {
+          duration: 2000,
+        });
+      }
+    });
+  }
+
+
+  guardadoX() {
 
     let itemDynamoDB: IItemDynamo = {
       'idIDynamoPersonaDueno': {
@@ -108,7 +158,7 @@ export class HistoriaComponent implements OnInit {
           'S': 'xxx_01'
         },
         'apellidos': {
-          'S': this.nombreDue
+          'S': this.itemsPersonaDueno.apellidos
         },
         'nombres': {
           'S': 'PABLO DE TARSO bbbbbbbbbbb'
@@ -130,28 +180,28 @@ export class HistoriaComponent implements OnInit {
 
 
       'apellidos': {
-        'S': this.nombreDue
+        'S': this.itemsPersonaDueno.apellidos
       },
       'nombres': {
-        'S': this.apellidoDue
+        'S': this.itemsPersonaDueno.nombres
       },
       'identificacion': {
-        'S': this.identificacionDue
+        'S': this.itemsPersonaDueno.identificacion
       },
       'ciudad': {
-        'S': this.ciudadDue
+        'S': this.itemsPersonaDueno.ciudad
       },
       'localidad': {
-        'S': this.localidadDue
+        'S': this.itemsPersonaDueno.localidad
       },
       'direccion': {
-        'S': this.direccionDue
+        'S': this.itemsPersonaDueno.direccion
       },
       'telefono': {
-        'S': this.telefono
+        'S': this.itemsPersonaDueno.telefono
       },
       'correoelectronico': {
-        'S': this.correoelectronico
+        'S': this.itemsPersonaDueno.correoelectronico
       }
 
 
@@ -159,14 +209,20 @@ export class HistoriaComponent implements OnInit {
 
     console.log("Datos Del Formulario ::::  ", iDynamoPersonaDueno00);
 
-    console.log("this.nombreDue ::::  ", this.nombreDue);
-    console.log("this.nombreDue ::::  ", this.nombreDueX);
+    //  console.log("this.nombreDue ::::  ", this.nombreDue);
+    //  console.log("this.nombreDue ::::  ", this.nombreDueX);
 
 
 
     this.pacienteservice.updateRadicado(iDynamoPersonaDueno00).subscribe(x => {
       x;
       console.log('xxxxxxxx ', x);
+      let idVeterinaria: string = this.pacienteservice.getIdVeterinaria();
+      // ddddd
+  
+      this.pacienteservice.updateBehaDatSourcItemPerDueno(idVeterinaria);
+      console.log('actualizacion de visualizacion tabla de dueños ')
+      this.pacienteservice.editFormTablaDuenos(VISUALIZAR);
     })
 
 
@@ -178,6 +234,44 @@ export class HistoriaComponent implements OnInit {
     //    console.log('xxxxxxxx ', x);
     //  })
 
+  }
+
+
+  zzxPaciente() {
+    this.openDialog();
+   
+
+    // <div *ngIf="formTablaDuenos === VISUALIZAR   ">
+    // <app-tabdue></app-tabdue>
+   // </div>
+//fff
+    /*
+    this.pacienteservice.listaPropietariosX0(idVeterinaria).subscribe(
+        x => {
+          x;
+          console.log('arreglo ... del datasource');
+        }
+
+    ) */
+
+
+    /*
+    let pqrs: Pqrs = {
+      objectid: 5,
+      radicado: 'xxx01',
+      asunto_radicacion: 'xxx02',
+      razon_social_establecimiento: 'xxx03',
+      sector_reportado: 'xxx04',
+      localidad: 'xxx05',
+      entidad_de_control: 'xxx05'
+    };
+*/
+    /*
+    this.pacienteservice.updateRadicado(pqrs).subscribe(x => {
+      x;
+      console.log('xxxxxxxx ', x);
+    })
+    */
   }
 
 
@@ -205,5 +299,9 @@ export class HistoriaComponent implements OnInit {
     )
   })
   */
+
+
+
+
 
 }

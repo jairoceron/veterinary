@@ -26,7 +26,7 @@ export class MenuComponent  implements OnInit {
   
 
   toggle() {
-   console.log('xxxxx66666666666666666666666666'); 
+   console.log('001'); 
   }
 
   toggleX(x:string) {
@@ -35,15 +35,15 @@ export class MenuComponent  implements OnInit {
 
   
   myFunction() {
-    console.log('ggg 959292  66666666666666666666'); 
+    console.log('ggg 959292  002'); 
   }
 
   arrowFunc = () => {
-    console.log('xxxxx66666666666vv666666666666666'); 
+    console.log('xxxxx003'); 
   }
 
   funcInvokedInline () {
-    console.log('xxxxx666666sssssss66666666666666666666'); 
+    console.log('xxxxx004'); 
   }
 
 }

@@ -1,0 +1,1656 @@
+[
+    {
+        "idRaza": {
+            "S": "00001"
+        },
+        "nombre": {
+            "S": "Criollo/meztiso"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"1"
+        },
+        "nombre": {
+            "S": "RAZAS DE PERROS"
+        },
+        "especie" : {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"2"
+        },
+        "nombre": {
+            "S":"Criollo/meztiso"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"3"
+        },
+        "nombre": {
+            "S":"Golden retriever"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"4"
+        },
+        "nombre": {
+            "S":"Labrador retriever"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"5"
+        },
+        "nombre": {
+            "S":"Bulldog"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"6"
+        },
+        "nombre": {
+            "S":"Bulldog Frances"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"7"
+        },
+        "nombre": {
+            "S":"Beagle"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"8"
+        },
+        "nombre": {
+            "S":"Alaska Malamute"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"9"
+        },
+        "nombre": {
+            "S":"Poodle"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"10"
+        },
+        "nombre": {
+            "S":"chihuahua de pelo corto "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"11"
+        },
+        "nombre": {
+            "S":"chihuahua de pelo suave"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"12"
+        },
+        "nombre": {
+            "S":"Chin japones"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"13"
+        },
+        "nombre": {
+            "S":"Chow chow ( depelo duro)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"14"
+        },
+        "nombre": {
+            "S":"Chow chow ( de pelo suave)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"15"
+        },
+        "nombre": {
+            "S":"Clumber spaniel "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"16"
+        },
+        "nombre": {
+            "S":"Cobrador de nueva Escocia"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"17"
+        },
+        "nombre": {
+            "S":"Cocker Spaniel americano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"18"
+        },
+        "nombre": {
+            "S":"Collie de pelo corto"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"19"
+        },
+        "nombre": {
+            "S":"Corgi gales de Cardigan (de pelo medio/largo)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"20"
+        },
+        "nombre": {
+            "S":"Corgi de gales de pembroke"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"21"
+        },
+        "nombre": {
+            "S":"Coton de Tulear"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"22"
+        },
+        "nombre": {
+            "S":"Crestado Chino"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"23"
+        },
+        "nombre": {
+            "S":"Crestado Rodesiano(Rhodesian Ridgeback)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"24"
+        },
+        "nombre": {
+            "S":"pastor aleman"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"25"
+        },
+        "nombre": {
+            "S":"Pastor australiano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"26"
+        },
+        "nombre": {
+            "S":"Dashshund"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"27"
+        },
+        "nombre": {
+            "S":"Rottewieler"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"28"
+        },
+        "nombre": {
+            "S":"Border collie"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"29"
+        },
+        "nombre": {
+            "S":"Airedale terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"30"
+        },
+        "nombre": {
+            "S":""
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"31"
+        },
+        "nombre": {
+            "S":"Afgano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"32"
+        },
+        "nombre": {
+            "S":"Bichon maltes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"33"
+        },
+        "nombre": {
+            "S":"Boxer"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"34"
+        },
+        "nombre": {
+            "S":"Bichon frise"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"35"
+        },
+        "nombre": {
+            "S":"Bichon boloñes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"36"
+        },
+        "nombre": {
+            "S":"Bergamasco"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"37"
+        },
+        "nombre": {
+            "S":"Bloodhound"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"38"
+        },
+        "nombre": {
+            "S":"Bobtail (antiguo perro pastor ingles)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"39"
+        },
+        "nombre": {
+            "S":"Borzoi"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"40"
+        },
+        "nombre": {
+            "S":"Border terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"41"
+        },
+        "nombre": {
+            "S":"Boyero de berna "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"42"
+        },
+        "nombre": {
+            "S":"Boyero de flandes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"43"
+        },
+        "nombre": {
+            "S":"Bracco italinao"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"44"
+        },
+        "nombre": {
+            "S":"Braco aleman de pelo corto"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"45"
+        },
+        "nombre": {
+            "S":"Braco aleman de pelo duro"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"46"
+        },
+        "nombre": {
+            "S":"Braco de Weimar (pelo corto y suave)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"47"
+        },
+        "nombre": {
+            "S":"Braco Hungaro "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"48"
+        },
+        "nombre": {
+            "S":"Braco Hungaro de pelo duro"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"49"
+        },
+        "nombre": {
+            "S":"Breton"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"50"
+        },
+        "nombre": {
+            "S":"Buhund Noruego"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"51"
+        },
+        "nombre": {
+            "S":"Bull Terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"52"
+        },
+        "nombre": {
+            "S":"Bull Terrier miniatura"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"53"
+        },
+        "nombre": {
+            "S":"Boston terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"54"
+        },
+        "nombre": {
+            "S":"Bullmastiff"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"55"
+        },
+        "nombre": {
+            "S":"Cairn Terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"56"
+        },
+        "nombre": {
+            "S":"Caniche enano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"57"
+        },
+        "nombre": {
+            "S":"Caniche grande"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"58"
+        },
+        "nombre": {
+            "S":"Carlino Pub"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"59"
+        },
+        "nombre": {
+            "S":"cavalier king charles spaniel"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"60"
+        },
+        "nombre": {
+            "S":"Cazador de alces noruego "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"61"
+        },
+        "nombre": {
+            "S":"Yorkshire terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"62"
+        },
+        "nombre": {
+            "S":"Pomerania"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"63"
+        },
+        "nombre": {
+            "S":"Basset hound"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"64"
+        },
+        "nombre": {
+            "S":"San Bernardo"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"65"
+        },
+        "nombre": {
+            "S":"Terranova"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"66"
+        },
+        "nombre": {
+            "S":"Pastro belga"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"67"
+        },
+        "nombre": {
+            "S":"Doberman"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"68"
+        },
+        "nombre": {
+            "S":"Samoyedo "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"69"
+        },
+        "nombre": {
+            "S":"shih tzu"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"70"
+        },
+        "nombre": {
+            "S":"akita inu japones"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"71"
+        },
+        "nombre": {
+            "S":"Basenji"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"72"
+        },
+        "nombre": {
+            "S":"beagle"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"73"
+        },
+        "nombre": {
+            "S":"Beauceron"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"74"
+        },
+        "nombre": {
+            "S":"Bedlington Terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"75"
+        },
+        "nombre": {
+            "S":"Dalmata"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"76"
+        },
+        "nombre": {
+            "S":"Dogo de Burdeos"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"77"
+        },
+        "nombre": {
+            "S":"Dandie Dinmont Terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"78"
+        },
+        "nombre": {
+            "S":"Fox Terrier de pelo duro"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"79"
+        },
+        "nombre": {
+            "S":"Field spaniel "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"80"
+        },
+        "nombre": {
+            "S":"Foxhound"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"81"
+        },
+        "nombre": {
+            "S":"Fox Terrier de pelo liso"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"82"
+        },
+        "nombre": {
+            "S":"gran azul de gascuña"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"83"
+        },
+        "nombre": {
+            "S":"Gran danes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"84"
+        },
+        "nombre": {
+            "S":"Grifon de bruselas (de pelo corto y duro) "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"85"
+        },
+        "nombre": {
+            "S":"Grifon de bruselas (pelaje corto y aspero)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"86"
+        },
+        "nombre": {
+            "S":"Habanero"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"87"
+        },
+        "nombre": {
+            "S":"Hamilton stovare"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"88"
+        },
+        "nombre": {
+            "S":"Hovawart"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"89"
+        },
+        "nombre": {
+            "S":"Husky siberiano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"90"
+        },
+        "nombre": {
+            "S":"keeshond"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"91"
+        },
+        "nombre": {
+            "S":"kerry blue terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"92"
+        },
+        "nombre": {
+            "S":"komondor"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"93"
+        },
+        "nombre": {
+            "S":"lhasa apso"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"94"
+        },
+        "nombre": {
+            "S":"lobero irlandes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"95"
+        },
+        "nombre": {
+            "S":""
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"96"
+        },
+        "nombre": {
+            "S":"Mastin Tibetano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"97"
+        },
+        "nombre": {
+            "S":"Munsterlander"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"98"
+        },
+        "nombre": {
+            "S":"Mastin napolitano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"99"
+        },
+        "nombre": {
+            "S":"Papillon"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"100"
+        },
+        "nombre": {
+            "S":"pastor de los pirineos "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"101"
+        },
+        "nombre": {
+            "S":"Pastor de Brie o Briard"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"102"
+        },
+        "nombre": {
+            "S":"Pastor ganadero australiano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"103"
+        },
+        "nombre": {
+            "S":"perro de agua irlandes "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"104"
+        },
+        "nombre": {
+            "S":"perro de agua español"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"105"
+        },
+        "nombre": {
+            "S":"perro de agua portugues"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"106"
+        },
+        "nombre": {
+            "S":"perro de canaan"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"107"
+        },
+        "nombre": {
+            "S":"perro de montaña de los pirineos "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"108"
+        },
+        "nombre": {
+            "S":"perrro del faraon "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"109"
+        },
+        "nombre": {
+            "S":"Pincher miniatura"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"110"
+        },
+        "nombre": {
+            "S":"Pincher aleman"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"111"
+        },
+        "nombre": {
+            "S":"Pointer"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"112"
+        },
+        "nombre": {
+            "S":"Podenco ibicenco"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"113"
+        },
+        "nombre": {
+            "S":"Retriever de pelo liso "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"114"
+        },
+        "nombre": {
+            "S":"Retriver de pelo rizado"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"115"
+        },
+        "nombre": {
+            "S":"Pastor Escoces o Rough collie"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"116"
+        },
+        "nombre": {
+            "S":"sabueso bavaro de montaña"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"117"
+        },
+        "nombre": {
+            "S":"sabueso itialiano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"118"
+        },
+        "nombre": {
+            "S":"Schnauzer estandar"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"119"
+        },
+        "nombre": {
+            "S":"Schnauzer gigante"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"120"
+        },
+        "nombre": {
+            "S":"Schnauzer miniatura"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"121"
+        },
+        "nombre": {
+            "S":"Sealyham Terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"122"
+        },
+        "nombre": {
+            "S":"Setter escoces"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"123"
+        },
+        "nombre": {
+            "S":"Setter ingles"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"124"
+        },
+        "nombre": {
+            "S":"Setter irlandes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"125"
+        },
+        "nombre": {
+            "S":"Shar Pei"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"126"
+        },
+        "nombre": {
+            "S":"shiba inu americano o akita americano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"127"
+        },
+        "nombre": {
+            "S":"Setter irlandes Rojo y blando"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"128"
+        },
+        "nombre": {
+            "S":"Silky Terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"129"
+        },
+        "nombre": {
+            "S":"Soft Coated"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"130"
+        },
+        "nombre": {
+            "S":"Spaniel Tibetano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"131"
+        },
+        "nombre": {
+            "S":"Spaniel Holandes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"132"
+        },
+        "nombre": {
+            "S":"Spinone italiano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"133"
+        },
+        "nombre": {
+            "S":"Spitz aleman mediano"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"134"
+        },
+        "nombre": {
+            "S":"Spitz aleman pequeño"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"135"
+        },
+        "nombre": {
+            "S":"Spitz Finlandes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"136"
+        },
+        "nombre": {
+            "S":"Spitz japones"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"137"
+        },
+        "nombre": {
+            "S":"Springer spaniel gales"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"138"
+        },
+        "nombre": {
+            "S":"Springer Spaniel ingles "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"139"
+        },
+        "nombre": {
+            "S":"Staffordshire Bull Terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"140"
+        },
+        "nombre": {
+            "S":""
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"141"
+        },
+        "nombre": {
+            "S":"Terrier de airedale"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"142"
+        },
+        "nombre": {
+            "S":"terrier escoces (scottih terrier)"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"143"
+        },
+        "nombre": {
+            "S":"Terrier irlandes"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"144"
+        },
+        "nombre": {
+            "S":"toy terrier ingles"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"145"
+        },
+        "nombre": {
+            "S":"West highland white terrier"
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+    {
+        "idRaza": {
+            "S":"146"
+        },
+        "nombre": {
+            "S":"xoloitzcuintle "
+        },
+        "especie": {
+            "S": "Perrito"
+        }
+    },
+
+    {"idRaza":{ "S":"147"}, "nombre":{ "S":"Munchkin"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"148"}, "nombre":{ "S":"Cornish Rex"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"149"}, "nombre":{ "S":"Bengalí"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"150"}, "nombre":{ "S":"Mestizos"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"151"}, "nombre":{ "S":"Abisinio"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"152"}, "nombre":{ "S":"Americano de pelo corto"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"153"}, "nombre":{ "S":"Angora Turco"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"154"}, "nombre":{ "S":"Ashera"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"155"}, "nombre":{ "S":"Azul Ruso"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"156"}, "nombre":{ "S":"Bengalí"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"157"}, "nombre":{ "S":"Birmano"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"158"}, "nombre":{ "S":"Bombay"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"159"}, "nombre":{ "S":"Bosque de Noruega"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"160"}, "nombre":{ "S":"Británico de pelo corto"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"161"}, "nombre":{ "S":"Burmés"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"162"}, "nombre":{ "S":"Colorpoint Shorthair"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"163"}, "nombre":{ "S":"Elfo"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"164"}, "nombre":{ "S":"Esfinge"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"165"}, "nombre":{ "S":"Exótico de pelo corto"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"166"}, "nombre":{ "S":"Kohana"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"167"}, "nombre":{ "S":"Lykoi"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"168"}, "nombre":{ "S":"Maine Coon"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"169"}, "nombre":{ "S":"Mau Egipcio"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"170"}, "nombre":{ "S":"Munchkin"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"171"}, "nombre":{ "S":"Persa"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"172"}, "nombre":{ "S":"Ragdoll"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"173"}, "nombre":{ "S":"Rizado Americano o Curl Americano"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"174"}, "nombre":{ "S":"Savannah"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"175"}, "nombre":{ "S":"Siamés"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"176"}, "nombre":{ "S":"Siberiano o Bosque de Siberia"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"177"}, "nombre":{ "S":"Tiffany"}, "especie" : { "S":"Gato" } },
+    {"idRaza":{ "S":"178"}, "nombre":{ "S":"Tonkinés o Tonquinés"}, "especie" : { "S":"Gato" } }
+    
+
+
+
+]
